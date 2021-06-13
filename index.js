@@ -1,10 +1,18 @@
 // Code your solution here
-function findMatching(drivers){
-    const filtered = drivers.filter(name => name.drivers === "Bobby" && "bobby")
+function findMatching(driversArray, nameToFind){
+    //const filtered = drivers.filter(name => name.drivers === "Bobby" && "bobby")
+    const filtered = driversArray.filter(name => nameToFind.toLowerCase() === name.toLowerCase() )
+    // console.log(filtered)
     return filtered
-}
+  }
 
-//let found = names.filter(element => element.drivers === 'Bobby')
-// if(found){
-//     return found.drivers
-//         }
+
+  function fuzzyMatch(arr, saClub){
+    const filtered = arr.filter(members => saClub === members)
+    return filtered
+    }
+  
+
+
+      
+
