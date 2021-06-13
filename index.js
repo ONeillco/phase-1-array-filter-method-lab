@@ -7,10 +7,16 @@ function findMatching(driversArray, nameToFind){
   }
 
 
-  function fuzzyMatch(arr, saClub){
-    const filtered = arr.filter(members => saClub === members)
+  function fuzzyMatch(driversArray, lettersToFind){
+    const filtered = driversArray.filter(driverNames => {
+      lettersToFind === driverNames;
+      
+      //console.log('driverNames', driverNames)
+      console.log('lettersTofind', lettersToFind)
+      
+    })
     return filtered
-    }
+  }
   
 
 
