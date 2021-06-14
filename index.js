@@ -20,14 +20,14 @@ function findMatching(driversArray, nameToFind){
     return filtered
   }
 
-  function matchName(driversArray, nameTofind){
-    const filtered = driversArray.filter(driverNames => nameTofind === driverNames)
-    return filtered
-      
+  function matchName(driversArray, nameToFind){
+    const filtered = driversArray.filter(object => nameToFind.toLowerCase() === object.name.toLowerCase() )
+    
+      return filtered
   }
  
 //console.log('namesToFind', namesToFind)
- // console.log('nameLocation', nameLocation)
+ 
   
 
   
